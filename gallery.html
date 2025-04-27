@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Gallery - Allissee & Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Allissee & Company Logo">
+                    </a>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Farm Gallery</h1>
+            <p class="subtitle">A visual journey through our plantation and processes</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="plantation">Plantation</button>
+                <button class="filter-btn" data-filter="nursery">Nursery</button>
+                <button class="filter-btn" data-filter="harvesting">Harvesting</button>
+                <button class="filter-btn" data-filter="processing">Processing</button>
+                <button class="filter-btn" data-filter="logistics">Logistics</button>
+                <button class="filter-btn" data-filter="products">Products</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" data-category="plantation">
+                    <img src="images/aerialviewoffarm.jpg" alt="Aerial view of palm plantation">
+                    <div class="gallery-overlay">
+                        <h3>Aerial View</h3>
+                        <p>Our expansive palm oil plantation from above</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nursery">
+                    <img src="images/nurseryseedlings3monthsold.jpeg" alt="3-month old seedlings">
+                    <div class="gallery-overlay">
+                        <h3>Young Seedlings</h3>
+                        <p>3-month old seedlings in our nursery</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nursery">
+                    <img src="images/nurseryseedlings6months.jpg" alt="6-month old seedlings">
+                    <div class="gallery-overlay">
+                        <h3>Growing Seedlings</h3>
+                        <p>6-month old seedlings development</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nursery">
+                    <img src="images/nurseryseedlings9months.jpeg" alt="9-month old seedlings">
+                    <div class="gallery-overlay">
+                        <h3>Mature Seedlings</h3>
+                        <p>9-month old seedlings ready for planting</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="harvesting">
+                    <img src="images/farmersharvestingffb.jpg" alt="Farmers harvesting FFB">
+                    <div class="gallery-overlay">
+                        <h3>Harvest Time</h3>
+                        <p>Our skilled farmers harvesting fresh fruit bunches</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="harvesting">
+                    <img src="images/farmersharvestingffb2.jpg" alt="Farmers harvesting FFB">
+                    <div class="gallery-overlay">
+                        <h3>Field Operations</h3>
+                        <p>Careful harvesting of palm fruit bunches</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="processing">
+                    <img src="images/ffb.jpeg" alt="Fresh Fruit Bunches">
+                    <div class="gallery-overlay">
+                        <h3>Fresh Fruit Bunches</h3>
+                        <p>High-quality palm fruit ready for processing</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="processing">
+                    <img src="images/cross section of oil palm fruit.jpeg" alt="Palm Fruit Cross Section">
+                    <div class="gallery-overlay">
+                        <h3>Fruit Analysis</h3>
+                        <p>Cross-section view of our premium palm fruits</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="processing">
+                    <img src="images/worker in oil mill.jpeg" alt="Mill Worker">
+                    <div class="gallery-overlay">
+                        <h3>Mill Operations</h3>
+                        <p>Our dedicated team at the processing facility</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="logistics">
+                    <img src="images/farmers loading ffb into truck in farm.jpeg" alt="Loading FFB">
+                    <div class="gallery-overlay">
+                        <h3>Farm Loading</h3>
+                        <p>Loading fresh fruit bunches for transport</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="logistics">
+                    <img src="images/trucks on the road carrying ffb from farm.jpeg" alt="FFB Transport">
+                    <div class="gallery-overlay">
+                        <h3>Transportation</h3>
+                        <p>Efficient delivery of fresh fruit bunches</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="logistics">
+                    <img src="images/truck offloading ffb at mill.jpeg" alt="Mill Offloading">
+                    <div class="gallery-overlay">
+                        <h3>Mill Delivery</h3>
+                        <p>Offloading fresh fruit bunches at our processing facility</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="products">
+                    <img src="images/5litresoil.png" alt="5L Palm Oil">
+                    <div class="gallery-overlay">
+                        <h3>5L Container</h3>
+                        <p>Our premium palm oil in 5-liter packaging</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="products">
+                    <img src="images/10litresoil.png" alt="10L Palm Oil">
+                    <div class="gallery-overlay">
+                        <h3>10L Container</h3>
+                        <p>Bulk packaging for small businesses</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="products">
+                    <img src="images/25litresoil.png" alt="25L Palm Oil">
+                    <div class="gallery-overlay">
+                        <h3>25L Container</h3>
+                        <p>Commercial quantity packaging</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>Allissee & Co. © 2025 – All rights reserved</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="social-icon facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="social-icon instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="social-icon twitter"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2348012345678" class="whatsapp-button" aria-label="Chat on WhatsApp">
+        <i class="whatsapp-icon"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
